@@ -51,7 +51,16 @@ router.post("/", (req, res) => {
     email: req.body.email,
     password: req.body.password,
   })
-    .then((UserInfo) => res.json(UserInfo))
+    .then((UserInfo) => {
+      req.session.save(() => {
+        // session variables
+        req.session.user_id = UserInfo.id;
+        req.session.username = UserInfo.username;
+        req.session.loggedIn = true;
+
+        res.json(UserInfo);
+      });
+    })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -80,8 +89,25 @@ router.post("/login", (req, res) => {
         .json({ message: "Entered password is incorrect, please retry" });
       return;
     }
-    res.json({ user: UserInfo, message: "Login successful" });
+    req.session.save(() => {
+      // session variables
+      req.session.user_id = UserInfo.id;
+      req.session.username = UserInfo.username;
+      req.session.loggedIn = true;
+
+      res.json({ user: UserInfo, message: "Login successful" });
+    });
   });
+});
+
+router.post("/logout", (req, res) => {
+  if (req.session.loggedIn) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
 });
 
 // PUT /api/users/1. Update User
