@@ -17,3 +17,5 @@ Podcast.hasMany(Comment, {
 Comment.belongsTo(Podcast, {
   foreignKey: "pod_id",
 });
+
+module.exports = { User, Comment, Podcast };
