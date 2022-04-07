@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// GET /api/users. Select all users from user table in the DB and send it back as JSON.
+// GET /api/users. See all users
 router.get('/', (req, res) => {
     // Access our USER model and run .findAll() method
     User.findAll({
@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
       });
 });
 
-// POST /api/users. Create a user, values from SQL are from the req.body.
+// POST Create a user
 router.post('/', (req,res) => {
     User.create({
         username: req.body.username,
@@ -52,4 +52,44 @@ router.post('/login', (req, res) => {
     })
 })
 
+// PUT /api/users/1. Update User
+router.put('/:id', (req, res) => {
+    User.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+      .then(UserInfo => {
+          if (!UserInfo[0]) {
+              res.status(404).json({ message: 'No user found, try another id'});
+              return;
+          }
+          res.json(UserInfo);
+      })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
+// DELETE /api/users/1. Delete user
+router.delete('/:id', (req, res) => {
+    User.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+      .then(UserInfo => {
+          if(!UserInfo) {
+              res.status(404).json({ message: 'No user found, try another id' });
+              return;
+          }
+          res.json(UserInfo);
+      })
+      .catch(err => {
+          console.log(err);
+          res.status(500).json(err);
+      });
+});
 module.exports = router;
