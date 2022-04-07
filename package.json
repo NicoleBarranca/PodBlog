@@ -1,7 +1,7 @@
 {
   "name": "podblog",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">   <a href=\"\" rel=\"noopener\">  <img width=200px height=200px src=\"\" alt=\"Project logo\"></a> </p>",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
