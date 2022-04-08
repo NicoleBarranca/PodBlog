@@ -12,7 +12,8 @@
     />
   </head>
   <body>
-    <header>
+    {{> navbar}}
+    {{!-- <header>
       <h1>
         <a href="/">Pod Freaks</a>
       </h1>
@@ -26,11 +27,15 @@
           <a href="/login">Log In</a>
         {{/if}}
       </nav>
-    </header>
+    </header> --}}
     <main>
-      {{{body}}}
+
+      <!--Gutter for L and R of page-->
+    <div class="container">
+    {{{body}}}
+  </div>
     </main>
-    {{#if loggedIn}}
+  {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}
     <script
