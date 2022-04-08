@@ -1,3 +1,5 @@
+const req = require("express/lib/request");
+
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
@@ -7,4 +9,9 @@ router.get("/", (req, res) => {
 router.get("/profile", (req, res) => {
   res.render("profile");
 });
+
+router.get("/genres", (req, res) =>{
+  res.render("genres");
+})
+
 module.exports = router;
