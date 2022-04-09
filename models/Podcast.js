@@ -23,7 +23,7 @@ Podcast.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    genre: {
+    genre_id: {
       type: DataTypes.STRING,
       allowNull: false,
     },
