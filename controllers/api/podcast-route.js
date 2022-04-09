@@ -1,19 +1,24 @@
 const router = require("express").Router();
-const { Podcast, Comment, User } = require("../../models/");
+const { Podcast, Comment, User, Genre } = require("../../models/");
 
 // get all podcasts
 router.get("/", (req, res) => {
   Podcast.findAll({
+    attributes: ['id', 'title', 'creator', 'description', 'genre_id'],
     include: [
       {
-        model: Comment,
-        attributes: { exclude: ["updatedAt"] },
-        include: {
-          model: User,
-          attributes: ["username"],
-        },
+        model: Genre,
+        attributes: ['id', 'genre_name']
       },
-    ],
+      {
+        model: Comment,
+        attributes: { exclude: ["updatedAt"]} 
+      },
+      {
+        model: User,
+        attributes: ["username"],
+      }
+    ]
   })
     .then((podcast) => res.json(podcast))
     .catch((err) => {

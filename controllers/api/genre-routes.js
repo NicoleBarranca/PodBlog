@@ -1,14 +1,13 @@
 const router = require("express").Router();
 const { Genre, Podcast } = require("../../models/");
 
-// All genres
+// Find all genres
 router.get('/', (req, res) => {
     Genre.findAll({
-      attributes: ['id', 'genre_name'],
       include: [
         {
           model: Podcast,
-          attributes: ['id', 'title', 'creator', 'description', 'genre_id']
+          attributes: ['title']
         }
       ]
     })
@@ -18,6 +17,33 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
 });
+
+// Find one genre
+router.get('/:id', (req, res) => {
+    Genre.findOne({
+      where: {
+        id: req.params.id
+      },
+      attributes: ['id', 'genre_name'],
+      include: [
+        {
+            model: Podcast,
+            attributes: ['id', 'title', 'creator', 'description', 'genre_id']
+        }
+      ]
+    })
+      .then(GenreInfo => {
+        if (!GenreInfo) {
+          res.status(400).json({ message: 'No category with this id found!' });
+          return;
+        }
+        res.json(GenreInfo);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
 
 // Create a new genre
 router.post('/', (req, res) => {

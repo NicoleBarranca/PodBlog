@@ -24,7 +24,7 @@ Podcast.init(
       allowNull: false,
     },
     genre_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },

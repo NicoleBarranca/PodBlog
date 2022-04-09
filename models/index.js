@@ -15,12 +15,16 @@ Podcast.hasMany(Comment, {
   foreignKey: "pod_id",
 });
 
-Comment.belongsTo(Podcast, {
-  foreignKey: "pod_id",
+Genre.hasMany(Podcast, {
+  foreignKey: 'genre_id',
 });
 
-Genre.hasMany(Podcast, {
-  foreignKey: 'genre_id'
+Podcast.belongsTo(Genre, {
+  foreignKey: "genre_id"
+});
+
+Comment.belongsTo(Podcast, {
+  foreignKey: "pod_id",
 });
 
 module.exports = { User, Comment, Podcast, Genre };
