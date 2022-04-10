@@ -44,6 +44,11 @@ router.get("/podcasts/:id", (req, res) => {
     });
 });
 
+router.get("/genres", (req, res) => {
+  res.render("genres");
+});
+
+
 module.exports = router;
 
 // ('/comedy' req, res => {
