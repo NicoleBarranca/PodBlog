@@ -12,12 +12,16 @@ router.get("/", (req, res) => {
       },
       {
         model: Comment,
-        attributes: { exclude: ["updatedAt"]} 
+        attributes: { exclude: ["updatedAt"]}, 
+        include: [
+          {
+            model: User,
+            attributes: ["username"],
+
+          }
+
+        ]
       },
-      {
-        model: User,
-        attributes: ["username"],
-      }
     ]
   })
     .then((podcast) => res.json(podcast))
