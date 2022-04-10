@@ -1,0 +1,17 @@
+/* * {
+
+} */
+
+#hero {
+  background-image: url("../images/Code.jpg");
+  height: 50vh;
+}
+
+#footer-break {
+  height: 2px;
+  width: 80vw;
+}
+
+#copy {
+  font-size: 13px;
+}
