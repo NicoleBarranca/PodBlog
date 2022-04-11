@@ -9,7 +9,6 @@ const hbs = exphbs.create({});
 
 require("dotenv").config();
 const session = require("express-session");
-const { dirname } = require("path");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const sess = {
   secret: process.env.SESSION_SECRET,
