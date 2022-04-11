@@ -6,11 +6,11 @@
   <h4>Your Comments:</h4>
     {{#if comments.length}}
     <ol>
-      {{#each comments as |com|}}
+      {{#each comments}}
       <li>
-        <h5>{{com.title}}</h5>
-        <p>{{com.comment_text}}</p>
-        <h5>on {{com.podcast.title}}</h5>
+        <h5>{{title}}</h5>
+        <p>{{comment_text}}</p>
+        <a href="/podcasts/{{podcast.id}}">{{podcast.title}}</a>
       </li>
       {{/each}}
     </ol>
