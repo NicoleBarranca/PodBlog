@@ -13,6 +13,10 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/signup", (req, res) => {
+  res.render("signup");
+});
+
 // podcast page
 router.get("/podcasts/:id", (req, res) => {
   Podcast.findOne({
