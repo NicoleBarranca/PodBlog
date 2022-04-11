@@ -20,3 +20,7 @@
 #copy {
   font-size: 13px;
 }
+
+.footer {
+  position: relative;
+}
