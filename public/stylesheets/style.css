@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 100px;
 }
 
 #footer-break {
@@ -18,4 +19,10 @@
 
 #copy {
   font-size: 13px;
+}
+
+.error {
+  background-image: url("../images/404-PF.png");
+  height: 50vh;
+  background-position: center;
 }
