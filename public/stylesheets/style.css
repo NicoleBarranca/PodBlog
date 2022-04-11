@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 100px;
 }
 
 #footer-break {
@@ -18,4 +19,8 @@
 
 #copy {
   font-size: 13px;
+}
+
+.footer {
+  position: relative;
 }
