@@ -20,9 +20,3 @@
 #copy {
   font-size: 13px;
 }
-
-.error {
-  background-image: url("../images/404-PF.png");
-  height: 50vh;
-  background-position: center;
-}
