@@ -6,6 +6,40 @@
     <div class="col mb-4">
         <div class="card">
             <img src="../images/escaping-nxivm-pod.webp" class="card-img-top" alt="True Crime">
+<div
+  class="display-4 text-center fw-bold text-dark mt-5 pt-5 font-family-sans-serif"
+>
+  <p> Choose Your Genre </p>
+</div>
+
+{{#each genres}}
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img
+          src="../images/the-official-pod.jpg"
+          class="card-img"
+          alt="Entertainment"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{genre_name}}</h5>
+          {{#each podcasts}}
+            <a href="/podcasts/{{id}}">{{title}}</a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+{{! <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="../images/the-official-pod.jpg" class="card-img" alt="Entertainment">
+        </div>
+        <div class="col-md-8">
             <div class="card-body">
                 <h5 class="card-title">Genre</h5>
                 <p class="card-text font-monospace">Come enjoy the list of titles here!</p>
@@ -196,3 +230,4 @@
         </div>
     </div>
 </div>
+</div> }}

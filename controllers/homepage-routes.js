@@ -29,7 +29,7 @@ router.get("/podcasts/:id", (req, res) => {
       },
       {
         model: Comment,
-        attributes: ["id", "title", "comment_text", "createdAt"],
+        attributes: ["id", "title", "comment_text", "user_id", "createdAt"],
         include: {
           model: User,
           attributes: ["username"],
@@ -40,7 +40,10 @@ router.get("/podcasts/:id", (req, res) => {
     .then((podData) => {
       const podcast = podData.get({ plain: true });
       console.log(podcast);
-      res.render("podcast", podData);
+      res.render("podcast", {
+        podcast,
+        loggedIn: req.session.loggedIn,
+      });
     })
     .catch((err) => {
       console.log(err);
@@ -49,9 +52,19 @@ router.get("/podcasts/:id", (req, res) => {
 });
 
 router.get("/genres", (req, res) => {
-  res.render("genres");
+  Genre.findAll({
+    include: [
+      {
+        model: Podcast,
+        attributes: ["id", "title", "description", "creator"],
+      },
+    ],
+  }).then((genreData) => {
+    const genres = genreData.map((genreObj) => genreObj.get({ plain: true }));
+    console.log(genres);
+    res.render("genres", { genres, loggedIn: req.session.loggedIn });
+  });
 });
-
 
 module.exports = router;
 
