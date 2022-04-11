@@ -1,14 +1,19 @@
-<form id="login-form">
-  <div>
-    <label for="email-login">Email:</label>
-    <input type="text" id="email-login" />
+<form id="login-form" class="mt-5 mb-5">
+  <div class="mb-3">
+    <label for="email-login" class="form-label">Email Adress</label>
+    <input
+      type="text"
+      id="email-login"
+      class="form-control"
+      aria-describedby="emailHelp"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="password-login" class="form-label">Password</label>
+    <input type="password" id="password-login" class="form-control" />
   </div>
   <div>
-    <label for="password-login">Password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">Login</button>
+    <button class="btn btn-outline-dark" type="submit">Login</button>
   </div>
 </form>
 <script src="/js/login.js"></script>
