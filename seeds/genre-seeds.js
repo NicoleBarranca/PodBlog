@@ -14,8 +14,11 @@ const genreData = [
     genre_name: 'Technology',
   },
   {
-    genre_name: 'Anime',
+    genre_name: 'Educational',
   },
+  {
+    genre_name: 'Entertainment',
+  }
 ];
 
 const seedGenres = () => Genre.bulkCreate(genreData);
