@@ -4,25 +4,23 @@ const { Podcast, Comment, User, Genre } = require("../../models/");
 // get all podcasts
 router.get("/", (req, res) => {
   Podcast.findAll({
-    attributes: ['id', 'title', 'creator', 'description', 'genre_id'],
+    attributes: ["id", "title", "creator", "description", "genre_id"],
     include: [
       {
         model: Genre,
-        attributes: ['id', 'genre_name']
+        attributes: ["id", "genre_name"],
       },
       {
         model: Comment,
-        attributes: { exclude: ["updatedAt"]}, 
+        attributes: { exclude: ["updatedAt"] },
         include: [
           {
             model: User,
             attributes: ["username"],
-
-          }
-
-        ]
+          },
+        ],
       },
-    ]
+    ],
   })
     .then((podcast) => res.json(podcast))
     .catch((err) => {
@@ -38,6 +36,9 @@ router.get("/:id", (req, res) => {
       id: req.params.id,
     },
     include: [
+      {
+        model: Genre,
+      },
       {
         model: Comment,
         attributes: { exclude: ["updatedAt"] },

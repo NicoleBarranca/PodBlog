@@ -1,3 +1,26 @@
-<h3>Podcast title</h3>
-<p>pod description/genre</p>
-<p>(comments)</p>
+<section id="podcast-info">
+  <h3>{{podcast.title}}</h3>
+  <h4>Genre: {{podcast.genre.genre_name}}</h4>
+  <p>Description: <br />{{podcast.description}}</p>
+</section>
+<section id="comments">
+  <h4>Comments:</h4>
+  {{#if podcast.comments.length}}
+    <ol>
+      {{#each podcast.comments as |com|}}
+        <li>
+          <h5>{{com.title}}</h5>
+          <p>{{com.comment_text}}
+            <br />
+            by
+            {{com.user.username}}
+            at
+            {{com.createdAt}}
+          </p>
+        </li>
+      {{/each}}
+    </ol>
+  {{else}}
+    <h5>No comments yet</h5>
+  {{/if}}
+</section>

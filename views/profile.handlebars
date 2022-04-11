@@ -3,19 +3,18 @@
 </div>
 
 <section>
-  <h4>Your Comments:</h3>
+  <h4>Your Comments:</h4>
     {{#if comments.length}}
     <ol>
       {{#each comments as |com|}}
       <li>
-        <h5>{{com.title}}
-  </h4>
-  <p>{{com.comment_text}}</p>
-  <h5>on {{com.podcast.title}}</h5>
-  </li>
-  {{/each}}
-  </ol>
-  {{else}}
-  <h5>You have no comments!</h5>
-  {{/if}}
+        <h5>{{com.title}}</h5>
+        <p>{{com.comment_text}}</p>
+        <h5>on {{com.podcast.title}}</h5>
+      </li>
+      {{/each}}
+    </ol>
+    {{else}}
+    <h5>You have no comments!</h5>
+    {{/if}}
 </section>
