@@ -24,3 +24,8 @@
 .footer {
   position: relative;
 }
+
+#genre-image {
+  background-image: url("../images/genre-card.jpg");
+  object-fit: contain;
+}
