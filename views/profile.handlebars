@@ -1,3 +1,4 @@
+
 <div class="fs-4 profile-intro mb-5 font-monospace text-center">Welcome Your
   Profile</div>
 <section class="container">
@@ -5,28 +6,23 @@
   {{#if comments.length}}
   <!--box for comment-->
   <!--each-->
+   {{#each comments}}
   <div class="container mt-5">
     <div class="d-flex justify-content-center row">
       <div class="col-md-8">
-        <div class="d-flex flex-column comment-section">
+        <div class="d-flex flex-column">
           <div class="bg-white p-2">
-            <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/images/404-PF.jpg" width="40">
+            <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/images/comment-icon.jpg" width="50">
               <div class="d-flex flex-column justify-content-start ml-2"><span
-                  class="d-block font-weight-bold name">You</span><span class="date text-black-50">DATE</span></div>
+                  class="d-block font-weight-bold name">
+                  {{title}} | <a href="/podcasts/{{podcast.id}}" class="text-decoration-none text-secondary ">{{podcast.title}}</a></span>
+                  <span class="date text-black-50">{{date_format createdAt}}</span></div>
             </div>
             <div class="mt-2">
               <p class="comment-text">{{comment_text}}</p>
             </div>
           </div>
-          <ol>
-            {{#each comments}}
-            <li>
-              <h5>{{title}}</h5>
-              <p></p>
-              <a href="/podcasts/{{podcast.id}}">{{podcast.title}}</a>
-            </li>
             {{/each}}
-          </ol>
         </div>
       </div>
     </div>
@@ -37,40 +33,13 @@
   {{/if}}
 </section>
 
-<div class="container mt-5">
-  <div class="d-flex justify-content-center row">
-    <div class="col-md-8">
-      <div class="d-flex flex-column comment-section">
-        <div class="bg-white p-2">
 
-          <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/images/404-PF.jpg" width="40">
-            <div class="d-flex flex-column justify-content-start ml-2"><span
-                class="d-block font-weight-bold name">You</span><span class="date text-black-50">DATE</span></div>
-          </div>
-          <div class="mt-2">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
 
         <div class="container mt-5">
           <div class="d-flex justify-content-center row">
             <div class="col-md-8">
               <div class="d-flex flex-column comment-section">
-                <div class="bg-white p-2">
-                  <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/images/404-PF.jpg"
-                      width="40">
-                    <div class="d-flex flex-column justify-content-start ml-2"><span
-                        class="d-block font-weight-bold name">You</span><span class="date text-black-50">DATE</span>
-                    </div>
-                  </div>
-                  <div class="mt-2">
-                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
+
 
                 <div class="bg-light p-2">
                   <div class="d-flex flex-row align-items-start"><textarea
@@ -81,4 +50,3 @@
                 </div>
               </div>
             </div>
-          </div>
