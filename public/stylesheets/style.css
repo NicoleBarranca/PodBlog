@@ -33,3 +33,9 @@
 .profile-intro {
   margin-top: 150px;
 }
+
+.home-section-intros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
