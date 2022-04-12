@@ -2,6 +2,13 @@
   <p>{{podcast.title}}</p>
   <P>Genre: {{podcast.genre.genre_name}}</p>
   <p>Description: <br />{{podcast.description}}</p>
+  <div class="rating-stars">
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+  </div>
 </section>
 <section id="comments">
   {{#if loggedIn}}

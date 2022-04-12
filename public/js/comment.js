@@ -27,6 +27,27 @@ async function commentFormHandler(e) {
   }
 }
 
+const Stars = [...document.getElementsByClassName("star")];
+
+function executeRating(stars) {
+  const starOn = "star fas fa-star";
+  const starOff = "star far fa-star";
+  const starsLen = stars.length;
+  let i;
+  stars.map((star) => {
+    star.onclick = () => {
+      i = stars.indexOf(star);
+
+      if (star.className===starOff) {
+        for (i; i >= 0; --i) stars[i].className = starOn;
+      } else {
+        for (i; i < starsLen; ++i) stars[i].className = starOff;
+      }
+    };
+  });
+}
+executeRating(Stars);
+
 document
   .querySelector("#comment-form")
   .addEventListener("click", commentFormHandler);
