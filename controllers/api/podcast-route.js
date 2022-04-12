@@ -71,6 +71,12 @@ router.post("/", (req, res) => {
     });
 });
 
+// vote on a podcast
+router.put("/votes", (req, res) => {
+
+
+})
+
 // update podcast
 router.put("/:id", (req, res) => {
   Podcast.update(req.body, {
