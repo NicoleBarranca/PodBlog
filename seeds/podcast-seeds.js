@@ -15,8 +15,6 @@ const podcastData = [
       "Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power. Lex is an AI researcher at MIT and beyond.",
     genre_id: 4,
   },
-<<<<<<< HEAD
-=======
   {
     title: 'Hardcore History',
     creator: 'Dan Carlin',
@@ -95,7 +93,6 @@ const podcastData = [
     description:'On a weekly basis the Rooster Teeth crew discuss gaming, films, popular culture, the internet, and projects that theyre currently working on.',
     genre_id: 6
   },
->>>>>>> develop
 ];
 
 const seedPodcasts = () => Podcast.bulkCreate(podcastData);
