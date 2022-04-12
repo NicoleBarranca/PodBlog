@@ -19,3 +19,11 @@
 #copy {
   font-size: 13px;
 }
+
+.footer {
+  position: relative;
+}
+
+.body-margin {
+  margin-top: 100px;
+}
