@@ -29,3 +29,7 @@
   background-image: url("../images/genre-card.jpg");
   object-fit: contain;
 }
+
+.profile-intro {
+  margin-top: 150px;
+}
