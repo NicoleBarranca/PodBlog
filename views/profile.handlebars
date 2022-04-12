@@ -4,6 +4,7 @@
   <h4 class="text-secondary text-opacity-75 text-center font-monospace">Your Comments:</h4>
   {{#if comments.length}}
   <!--box for comment-->
+  <!--each-->
   <div class="container mt-5">
     <div class="d-flex justify-content-center row">
       <div class="col-md-8">
@@ -14,16 +15,14 @@
                   class="d-block font-weight-bold name">You</span><span class="date text-black-50">DATE</span></div>
             </div>
             <div class="mt-2">
-              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p class="comment-text">{{comment_text}}</p>
             </div>
           </div>
           <ol>
             {{#each comments}}
             <li>
               <h5>{{title}}</h5>
-              <p>{{comment_text}}</p>
+              <p></p>
               <a href="/podcasts/{{podcast.id}}">{{podcast.title}}</a>
             </li>
             {{/each}}
