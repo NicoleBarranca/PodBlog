@@ -1,15 +1,15 @@
 <section id="podcast-info">
-  <p>{{podcast.title}}</p>
-  <P>Genre: {{podcast.genre.genre_name}}</p>
-  <p>Description: <br />{{podcast.description}}</p>
+  <p class="text-center fs-1 profile-intro">{{podcast.title}}</p>
+  <P class="text-center fs-3">Genre: {{podcast.genre.genre_name}}</p>
+  <p class="text-center fs-5">Description: <br />{{podcast.description}}</p>
 </section>
 <section id="comments">
   {{#if loggedIn}}
-  <form class="bg-light p-2" id="comment-form">
+  {{!-- <form class="bg-light p-2" id="comment-form">
     <div class="d-flex flex-row align-items-start">
       <label for="comment-title">Title</label>
       <input class="form-control ml-1 shadow-none textarea" type="text" id="comment-title" name="comment-title" />
-    </div>
+    </div> --}}
     <div>
       <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"></textarea>
     </div>
