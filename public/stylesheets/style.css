@@ -28,3 +28,18 @@
 .margin-body {
   margin-top: 6rem;
 }
+
+#genre-image {
+  background-image: url("../images/genre-card.jpg");
+  object-fit: contain;
+}
+
+.profile-intro {
+  margin-top: 150px;
+}
+
+.home-section-intros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

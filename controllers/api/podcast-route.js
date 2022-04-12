@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const { Podcast, Comment, User, Genre } = require("../../models/");
+const sequelize = require('sequelize');
+const { Podcast, Comment, User, Genre, PodVote } = require("../../models/");
 
 // get all podcasts
 router.get("/", (req, res) => {
@@ -9,6 +10,10 @@ router.get("/", (req, res) => {
       {
         model: Genre,
         attributes: ["id", "genre_name"],
+      },
+      {
+        model: PodVote,
+        attributes: [[sequelize.literal('(SELECT COUNT(*) FROM podvote WHERE post.id = podvote.post_id)'), 'vote_count']],
       },
       {
         model: Comment,
@@ -38,6 +43,10 @@ router.get("/:id", (req, res) => {
     include: [
       {
         model: Genre,
+      },
+      {
+        model: PodVote,
+        attributes: ['id', [sequelize.fn('count', sequelize.col('id')), 'count']],
       },
       {
         model: Comment,
@@ -72,7 +81,7 @@ router.post("/", (req, res) => {
 });
 
 // vote on a podcast
-router.put("/votes", (req, res) => {
+router.put("/podcas", (req, res) => {
 
 
 })

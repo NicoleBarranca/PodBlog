@@ -5,6 +5,7 @@
       PodFreaks!</h1>
     <p class="lead text-light text-center">Come join our community podcast
       lovers...</p>
+      {{#unless loggedIn}}
     <p class="lead text-center">
       <a
         class="btn btn-light btn-lg mt-4 mb-5"
@@ -12,10 +13,11 @@
         role="button"
       >Login</a>
     </p>
+    {{/unless}}
   </div>
 </div>
 
-<!--FEATURED GENRES-->
+<!--FEATURED PODCASTS-->
 <div class="container mt-5">
   <div>
     <h1 class="display-6 text-center">Featured Podcasts</h1>
@@ -25,38 +27,60 @@
     class="d-flex justify-content-center justify-content-sm-center flex-sm-wrap"
   >
     <div class="row">
-      <div class="col mt-4">
+      <div class="col mt-4 d-flex align-self-stretch">
         <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
+          <img
+            src="/images/Twin-flames-pod.png"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Podcast Title</h5>
-            <p class="card-text">Here is a description of this podcast.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
+            <h5 class="card-title">Twin Flames</h5>
+            <p class="card-text"><small class="text-muted">Stephanie Beatriz</small></p>
+            <p class="card-text">
+              It’s divine love, you’re designed for no one else, and they’re
+              designed for no one else. But the path to finding your Twin Flame
+              isn’t so simple. Some followers claim they were encouraged to cut
+              ties with friends and family that are holding them back, and to
+              claim their Twin Flame by any means necessary.</p>
+
           </div>
         </div>
       </div>
 
-      <div class="col mt-4">
+      <div class="col mt-4 d-flex align-self-stretch">
         <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
+          <img
+            src="/images/lex-fridman-pod.png"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Podcast Title</h5>
-            <p class="card-text">Here is a description of this podcast.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
+            <h5 class="card-title">Lex Fridman Podcast</h5>
+            <p class="card-text"><small class="text-muted">Lex Fridman</small></p>
+            <p class="card-text">Conversations about science, technology,
+              history, philosophy and the nature of intelligence, consciousness,
+              love, and power. Lex is an AI researcher at MIT and beyond.</p>
+
           </div>
         </div>
       </div>
 
-      <div class="col mt-4">
+      <div class="col mt-4 d-flex align-self-stretch">
         <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
+          <img
+            src="/images/your-mom's-house-pod.webp"
+            class="card-img-top"
+            alt="..."
+          />
           <div class="card-body">
-            <h5 class="card-title">Podcast Title</h5>
-            <p class="card-text">Here is a description of this podcast.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
+            <h5 class="card-title">Your Mom’s House with Christina P and Tom
+              Segura</h5>
+            <p class="card-text"><small class="text-muted">YMH Studios</small></p>
+            <p class="card-text">Christina Pazsitzky and Tom Segura are
+              comedians who are also married. They are the Mommies and they
+              welcome you to join them. Dental updates! Dudes! Stories! Wiping!</p>
+
           </div>
         </div>
       </div>
@@ -66,54 +90,28 @@
 
 <div class="container bg-secondary p-2 mb-5 mt-5 text-dark bg-opacity-10"></div>
 
-<!--FEATURED GENRES-->
-<div class="container mt-5">
-  <div>
-    <h1 class="display-6 text-center">Featured Genres</h1>
-    <p class="lead text-center mb-5">Checkout our featured genres!</p>
-  </div>
-  <div
-    class="d-flex justify-content-center justify-content-sm-center flex-sm-wrap"
-  >
-    <div class="row">
-      <div class="col mt-4">
-        <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Genre 1</h5>
-            <p class="card-text">Here is a description of this genre.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mt-4">
-        <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Genre 2</h5>
-            <p class="card-text">Here is a description of this genre.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col mt-4">
-        <div class="card" style="width: 18rem;">
-          <img src="../../images/Code.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Genre 3</h5>
-            <p class="card-text">Here is a description of this genre.....</p>
-            <p class="card-text"><small class="text-muted">content we want to
-                apear here</small></p>
-          </div>
-        </div>
-      </div>
+<!-- GENRES CARD-->
+{{!-- h-75 w-100  h-50 w-100  w-75 --}}
+<div
+  class="d-flex justify-content-center genre-card justify-content-sm-center "
+>
+  <div class="card  genre-card justify-content-sm-center" id="genre-image">
+    <div class="card-body ">
+      <div class="">
+      <h5 class="card-title fs-2 text-light text-center">See all Genres</h5>
+    <p class="lead text-center">
+      <a
+        class="btn btn-outline-light btn-lg mt-4 mb-5"
+        href="/genres"
+        role="button"
+      >Explore</a>
+    </p>
     </div>
   </div>
-</div>
+
+  <div>
+    <img src="" alt="">
+  </div>
 
 <div
   class="container bg-secondary p-2 mb-5 mt-5 break text-dark bg-opacity-10"
