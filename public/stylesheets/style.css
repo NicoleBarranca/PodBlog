@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 100px;
 }
 
 #footer-break {
@@ -24,6 +25,11 @@
   position: relative;
 }
 
+<<<<<<< HEAD
 .body-margin {
   margin-top: 100px;
+=======
+.margin-body {
+  margin-top: 6rem;
+>>>>>>> develop
 }
