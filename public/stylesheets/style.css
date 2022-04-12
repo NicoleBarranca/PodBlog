@@ -24,3 +24,7 @@
 .footer {
   position: relative;
 }
+
+.margin-body {
+  margin-top: 6rem;
+}
