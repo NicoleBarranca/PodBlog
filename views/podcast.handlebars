@@ -3,16 +3,13 @@
   <div class="mx-auto" style="width: 200px;">
     <img src="/images/lex-fridman-pod.png" style="max-width: 100%;" class="rounded-circle mx-auto d-block" alt="...">
   </div>
-  <P class="text-center fs-3">Genre: {{podcast.genre.genre_name}}</p>
   <p class="text-center fs-5">Description: <br />{{podcast.description}}</p>
+  <P class="text-center fs-3 mt-3">Genre: {{podcast.genre.genre_name}}</p>
 </section>
-<section id="comments">
+<section class="text-center mt-5" id="comments">
   {{#if loggedIn}}
-  {{!-- <form class="bg-light p-2" id="comment-form">
-    <div class="d-flex flex-row align-items-start">
-      <label for="comment-title">Title</label>
-      <input class="form-control ml-1 shadow-none textarea" type="text" id="comment-title" name="comment-title" />
-    </div> --}}
+  <form class="bg-light p-2" id="comment-form">
+    
     <div>
       <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"></textarea>
     </div>
