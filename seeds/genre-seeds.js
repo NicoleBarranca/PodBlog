@@ -14,11 +14,8 @@ const genreData = [
     genre_name: "Technology",
   },
   {
-<<<<<<< HEAD
     genre_name: "Documentary",
-=======
     genre_name: 'Educational',
->>>>>>> develop
   },
   {
     genre_name: 'Entertainment',
