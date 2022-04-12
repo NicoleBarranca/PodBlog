@@ -25,6 +25,10 @@
   position: relative;
 }
 
+.margin-body {
+  margin-top: 6rem;
+}
+
 #genre-image {
   background-image: url("../images/genre-card.jpg");
   object-fit: contain;
