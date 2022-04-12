@@ -28,10 +28,11 @@
               by
               {{com.user.username}}
               at
-              {{com.createdAt}}
+              {{date_format com.createdAt}}
             </p>
           </li>
         {{/each}}
+
       </ol>
     {{else}}
       <h5>No comments yet</h5>
