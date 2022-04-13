@@ -6,26 +6,33 @@
   <p class="text-center fs-5">Description: <br />{{podcast.description}}</p>
   <P class="text-center fs-3 mt-3">Genre: {{podcast.genre.genre_name}}</p>
   <div class="text-center rating">
-        <i class="star far fa-star"></i>
-        <i class="star far fa-star"></i>
-        <i class="star far fa-star"></i>
-        <i class="star far fa-star"></i>
-        <i class="star far fa-star"></i>
+    <i class="star far fa-star"></i>
+    <i class="star far fa-star"></i>
+    <i class="star far fa-star"></i>
+    <i class="star far fa-star"></i>
+    <i class="star far fa-star"></i>
   </div>
 </section>
 <section class="text-center mt-5" id="comments">
   {{#if loggedIn}}
-  <form class="bg-light p-2" id="comment-form">
+  <div class="d-flex justify-content-center">
+  <form class="bg-light p-2 col-md-4"  id="comment-form">
 
     <div>
-      <input class="form-control ml-1 shadow-none textarea mb-2" type="text" id="comment-title" placeholder="title">
-      <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"></textarea>
+      <div class="row">
+        
+          <input class="form-control ml-1 shadow-none textarea mb-2" type="text" id="comment-title" placeholder="title">
+          <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"
+            rows="3"></textarea>
+        
+      </div>
     </div>
     <div class="mt-2 text-right">
       <button class="btn btn-dark btn-sm ml-1 shadow-none" type="submit" id="comment-submit">Add Comment</button>
       <button class="btn btn-outline-dark btn-sm ml-1 shadow-none" type="button">Cancel</button>
     </div>
   </form>
+  </div>
   {{/if}}
   <div>
 
@@ -42,14 +49,15 @@
                   width="50">
                 <div class="d-flex flex-column justify-content-start ml-2">
                   <div class="d-flex justify-content-start">{{title}}</div>
-                  
-                    <div>
+
+                  <div>
                     <span class="text-decoration-none text-secondary ">
-                      by {{com.user.username}} at {{date_format com.createdAt}}</span></div>
-                      </div>
+                      by {{com.user.username}} at {{date_format com.createdAt}}</span>
+                  </div>
+                </div>
               </div>
               <div class="d-flex flex column">
-                <p >{{com.comment_text}}</p>
+                <p>{{com.comment_text}}</p>
               </div>
             </div>
           </div>
