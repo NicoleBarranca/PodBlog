@@ -30,6 +30,8 @@ router.get("/podcasts/:id", (req, res) => {
       {
         model: Comment,
         attributes: ["id", "title", "comment_text", "user_id", "createdAt"],
+        separate: true,
+        order: [["createdAt", "DESC"]],
         include: {
           model: User,
           attributes: ["username"],
@@ -39,7 +41,6 @@ router.get("/podcasts/:id", (req, res) => {
   })
     .then((podData) => {
       const podcast = podData.get({ plain: true });
-      console.log(podcast);
       res.render("podcast", {
         podcast,
         loggedIn: req.session.loggedIn,
