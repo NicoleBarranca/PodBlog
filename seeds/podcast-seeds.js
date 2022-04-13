@@ -87,7 +87,7 @@ const podcastData = [
     description:
       'NXIVM (pronounced "Nexium") calls itself a humanitarian community. Experts call it a cult. Uncover: Escaping NXIVM is an investigative podcast series about the group, its leader Keith Raniere and one womans journey to get out. From CBC Podcasts and CBC News.',
     genre_id: 2,
-    pod_img: "escaping-nxivm-pod.webm",
+    pod_img: "escaping-nxivm-pod.webp",
   },
   {
     title: "This is Actually Happening",
@@ -166,7 +166,7 @@ const podcastData = [
     description:
       "Sarah is a journalist obsessed with the past. Every week she reconsiders a person or event that's been miscast in the public imagination.",
     genre_id: 5,
-    pod_img: "youre-wrong-about-pod.jpg",
+    pod_img: "your-wrong-about-pod.jpg",
   },
   {
     title: "Song Exploder",
@@ -190,7 +190,7 @@ const podcastData = [
     description:
       "Design is everywhere in our lives, perhaps most importantly in the places where we've just stopped noticing. 99% Invisible is a weekly exploration of the process and power of design and architecture.",
     genre_id: 5,
-    pod_img: "99-invisible.png",
+    pod_img: "99-invisible-pod.png",
   },
   {
     title: "WAN Show",
@@ -230,10 +230,10 @@ const podcastData = [
     description:
       "SON OF A HITMAN is a new podcast documentary series produced and hosted by Jason Cavanagh, that dives into the deadly world of Charles Harrelson, a womanizer, a card shark, and possibly one of the most notorious hitmen of all time. He is also the father to A-list actor, Woody Harrelson. Jason Cavanagh investigates each of the three murders Charles Harrelson was charged with, including the first assassination of a federal judge in United States history, all while seeking to unravel the Harrelson’s claim… that he was involved in the assassination of President John F. Kennedy.",
     genre_id: 2,
-    pod_img: "son-of-hitman-pod.jpg",
+    pod_img: "son-of-a-hitman-pod.jpg",
   },
   {
-    title: "Monring Wire",
+    title: "Morning Wire",
     creator: "John Bickley, Georgia Howe",
     description:
       "Trust in the media is at an all-time low. And there’s a reason—endless virtue signaling and manufactured outrage. Finally, there’s an alternative. Morning Wire is presented by Daily Wire Editor-in-Chief, John Bickley, and co-host Georgia Howe. Get daily coverage of the latest developments in politics, culture, education, sports, and more. Wake up with Morning Wire and get the facts first on the news you need to know.",
