@@ -31,6 +31,9 @@ Podcast.init(
         key: "id",
       },
     },
+    pod_img: {
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,
