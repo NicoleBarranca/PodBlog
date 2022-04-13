@@ -1,44 +1,54 @@
 <section id="podcast-info">
-  <p>{{podcast.title}}</p>
-  <P>Genre: {{podcast.genre.genre_name}}</p>
-  <p>Description: <br />{{podcast.description}}</p>
+  <p class="text-center fs-1 profile-intro">{{podcast.title}}</p>
+  <div class="mx-auto" style="width: 200px;">
+    <img src="/images/lex-fridman-pod.png" style="max-width: 100%;" class="rounded-circle mx-auto d-block" alt="...">
+  </div>
+  <p class="text-center fs-5">Description: <br />{{podcast.description}}</p>
+  <P class="text-center fs-3 mt-3">Genre: {{podcast.genre.genre_name}}</p>
 </section>
-<section id="comments">
+<section class="text-center mt-5" id="comments">
   {{#if loggedIn}}
-    <form id="comment-form">
-      <div>
-        <label for="comment-title">Title</label>
-        <input type="text" id="comment-title" name="comment-title" />
-      </div>
-      <div>
-        <textarea name="comment-content" id="comment-content"></textarea>
-      </div>
-      <button type="submit" id="comment-submit">Add Comment</button>
-    </form>
+  <form class="bg-light p-2" id="comment-form">
+    
+    <div>
+      <input class="form-control ml-1 shadow-none textarea mb-2" type="text" id="comment-title" placeholder="title">
+      <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"></textarea>
+    </div>
+    <div class="mt-2 text-right">
+      <button class="btn btn-dark btn-sm ml-1 shadow-none" type="submit" id="comment-submit">Add Comment</button>
+      <button class="btn btn-outline-dark btn-sm ml-1 shadow-none" type="button">Cancel</button>
+    </div>
+  </form>
   {{/if}}
   <div>
     <h4>Comments:</h4>
     {{#if podcast.comments.length}}
-      <ol>
-        {{#each podcast.comments as |com|}}
-          <li>
-            <h5>{{com.title}}</h5>
-            <p>{{com.comment_text}}
-              <br />
-              by
-              {{com.user.username}}
-              at
-              {{date_format com.createdAt}}
-            </p>
-          </li>
-        {{/each}}
+    <ol>
+      {{#each podcast.comments as |com|}}
+      <li>
+        <h5>{{com.title}}</h5>
+        <p>{{com.comment_text}}
+          <br />
+          by
+          {{com.user.username}}
+          at
+          {{date_format com.createdAt}}
+        </p>
+      </li>
+      {{/each}}
 
-      </ol>
+    </ol>
     {{else}}
-      <h5>No comments yet</h5>
+    <h5>No comments yet</h5>
     {{/if}}
   </div>
 </section>
 {{#if loggedIn}}
-  <script src="/js/comment.js"></script>
+<script src="/js/comment.js"></script>
 {{/if}}
+
+
+{{!-- Style for single podcast page --}}
+
+
+
