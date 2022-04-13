@@ -87,13 +87,6 @@ const podcastData = [
     genre_id: 2,
   },
   {
-    title: "This is Important",
-    creator: "Adam Devine, Anders Holm, Blake Anderson, and Kyle Newacheck",
-    description:
-      "Adam Devine, Anders Holm, Blake Anderson, and Kyle Newacheck seriously discuss some very important topics.",
-    genre_id: 3,
-  },
-  {
     title: "The Brilliant Idiots",
     creator: "Charlamange Tha God and Andrew Schulz",
     description:
