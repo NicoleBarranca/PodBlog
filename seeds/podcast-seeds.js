@@ -68,7 +68,7 @@ const podcastData = [
     creator: "Stephanie Beatriz",
     description:
       "We all want love, that happily-ever-after feeling of finding your soulmate. What if someone not only claimed they could help you find that perfect partner, they guaranteed it? Jeff and Shaleia, a young couple famous on YouTube, teach about Twin Flames a deep, romantic connection with your perfect partner in their videos. It’s divine love, you’re designed for no one else, and they’re designed for no one else. But the path to finding your Twin Flame isn’t so simple. Some followers claim they were encouraged to cut ties with friends and family that are holding them back, and to claim their Twin Flame by any means necessary. From Wondery, Twin Flames is a podcast about what happens when the quest for love turns into a dangerous obsession.",
-    genre_id: 5,
+    genre_id: 2,
   },
   {
     title: "Escaping NXIVM",
@@ -105,6 +105,19 @@ const podcastData = [
       "On a weekly basis the Rooster Teeth crew discuss gaming, films, popular culture, the internet, and projects that theyre currently working on.",
     genre_id: 6,
   },
+  {
+    title: "Therapy Gecko",
+    creator: "Lyle Drescher",
+    description:"An unlicensed lizard psychologist travels the universe talking to strangers about absolutely nothing. Call the gecko every Monday/Wednesday/Friday at 9pm EST on twitch.tv/lyleforever",
+    genre_id: 5,
+  },
+  {
+    title: "How I Built This",
+    creator: "Guy Raz",
+    description:"Guy Raz dives into the stories behind some of the world's best known companies. How I Built This weaves a narrative journey about innovators, entrepreneurs and idealists—and the movements they built.",
+    genre_id: 4,
+  },
+ 
 ];
 
 const seedPodcasts = () => Podcast.bulkCreate(podcastData);
