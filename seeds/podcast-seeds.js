@@ -50,7 +50,7 @@ const podcastData = [
     pod_img: "castle-super-beast-pod",
   },
   {
-    title: "Breaking Points with Krysta; and Saagar",
+    title: "Breaking Points with Krystal and Saagar",
     creator: "Krystal Ball and Saagar Enjeti",
     description:
       "Breaking Points is a fearless anti-establishment multi-week Youtube and Podcast which holds the powerful to account hosted by Krystal Ball and Saagar Enjeti",
