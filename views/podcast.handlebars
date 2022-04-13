@@ -9,7 +9,7 @@
 <section class="text-center mt-5" id="comments">
   {{#if loggedIn}}
   <form class="bg-light p-2" id="comment-form">
-    
+
     <div>
       <input class="form-control ml-1 shadow-none textarea mb-2" type="text" id="comment-title" placeholder="title">
       <textarea class="form-control ml-1 shadow-none textarea" name="comment-content" id="comment-content"></textarea>
@@ -21,34 +21,47 @@
   </form>
   {{/if}}
   <div>
-    <h4>Comments:</h4>
-    {{#if podcast.comments.length}}
-    <ol>
-      {{#each podcast.comments as |com|}}
-      <li>
-        <h5>{{com.title}}</h5>
-        <p>{{com.comment_text}}
-          <br />
-          by
-          {{com.user.username}}
-          at
-          {{date_format com.createdAt}}
-        </p>
-      </li>
-      {{/each}}
 
-    </ol>
-    {{else}}
-    <h5>No comments yet</h5>
-    {{/if}}
+    {{#if podcast.comments.length}}
+
+    {{#each podcast.comments as |com|}}
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+        <div class="col-md-8">
+          <div class="d-flex flex-column">
+            <div class="bg-white p-2">
+              <div class="d-flex flex-row user-info"><img class="rounded-circle" src="/images/comment-icon.jpg"
+                  width="50">
+                <div class="d-flex flex-column justify-content-start ml-2">
+                  <div class="d-flex justify-content-start">{{title}}</div>
+                  
+                    <div>
+                    <span class="text-decoration-none text-secondary ">
+                      by {{com.user.username}} at {{date_format com.createdAt}}</span></div>
+                      </div>
+              </div>
+              <div class="d-flex flex column">
+                <p >{{com.comment_text}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+  {{else}}
+  <h5>No comments yet</h5>
+  {{/if}}
   </div>
 </section>
 {{#if loggedIn}}
-<script src="/js/comment.js"></script>
+<script src=" /js/comment.js">
+</script>
 {{/if}}
 
 
 {{!-- Style for single podcast page --}}
-
-
-
