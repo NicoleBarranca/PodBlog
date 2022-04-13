@@ -5,6 +5,13 @@
   </div>
   <p class="text-center fs-5">Description: <br />{{podcast.description}}</p>
   <P class="text-center fs-3 mt-3">Genre: {{podcast.genre.genre_name}}</p>
+  <div class="text-center rating">
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+        <i class="star far fa-star"></i>
+  </div>
 </section>
 <section class="text-center mt-5" id="comments">
   {{#if loggedIn}}
