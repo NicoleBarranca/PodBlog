@@ -15,7 +15,7 @@ const podcastData = [
     description:
       "Conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power. Lex is an AI researcher at MIT and beyond.",
     genre_id: 4,
-    pod_img: "lex-fridman-pod",
+    pod_img: "lex-fridman-pod.png",
   },
   {
     title: "Hardcore History",
@@ -23,7 +23,7 @@ const podcastData = [
     description:
       "Carlins work weaves historical information with deep questions and Twilight Zone-style twists to help illustrate the power and continuing relevance of the past. Drama, extremes, empathy and vivid examples of both the highs and lows of humanity dominate the narrative. It’s a trademark mix of elements that has been entertaining listeners since 2005.",
     genre_id: 5,
-    pod_img: "hardcore-history-pod",
+    pod_img: "hardcore-history-pod.webp",
   },
   {
     title: "The Weekly Planet",
@@ -31,7 +31,7 @@ const podcastData = [
     description:
       "The Weekly Planet covers all things movies, TV shows and comics. Often considered the first and worst podcast on the Planet Broadcasting Network.",
     genre_id: 6,
-    pod_img: "the-weekly-planet-pod",
+    pod_img: "the-weekly-planet-pod.jpg",
   },
   {
     title: "The Official Podcast",
@@ -39,7 +39,7 @@ const podcastData = [
     description:
       "The Official Podcast is where four international man friends congregate to discuss just about everything. Featuring dumb questions, YouTube celebrities, childish giggling, burger puns, more dumb questions, fatherly advice, bad dating stories, even more dumb questions, and a slew of guest stars, The Official Podcast is a weekly show with a little something for everyone. Jackson, Andrew, Charlie, and Kaya gather to talk about only the most important things in life every Friday at 7pm EST.",
     genre_id: 3,
-    pod_img: "the-official-pod",
+    pod_img: "the-official-pod.jpg",
   },
   {
     title: "Castle Super Beast",
@@ -47,7 +47,7 @@ const podcastData = [
     description:
       "Formerly known as the Super Best Friendcast. Every week, the shameless cowards known as Woolie and Pat discuss the latest in video game news, movies, and anime.",
     genre_id: 6,
-    pod_img: "castle-super-beast-pod",
+    pod_img: "castle-super-beast-pod.webp",
   },
   {
     title: "Breaking Points with Krystal and Saagar",
@@ -55,7 +55,7 @@ const podcastData = [
     description:
       "Breaking Points is a fearless anti-establishment multi-week Youtube and Podcast which holds the powerful to account hosted by Krystal Ball and Saagar Enjeti",
     genre_id: 1,
-    pod_img: "breaking-points-pod",
+    pod_img: "breaking-points-pod.jpg",
   },
   {
     title: "Your Moms House",
@@ -63,7 +63,7 @@ const podcastData = [
     description:
       "Christina Pazsitzky and Tom Segura are comedians who are also married. They are the Mommies and they welcome you to join them. Dental updates! Dudes! Stories! Wiping!",
     genre_id: 3,
-    pod_img: "your-mom's-house-pod",
+    pod_img: "your-mom's-house-pod.webp",
   },
   {
     title: "Flagrant 2",
@@ -71,7 +71,7 @@ const podcastData = [
     description:
       "Flagrant 2 is a comedy podcast that delivers unfiltered, unapologetic, and unruly hot takes directly to your dome piece. In an era dictated by political correctness, hosts Andrew Schulz and Akaash Singh, along with AlexxMedia and Mark Gagnon, could care less about sensitivities. If it’s funny and flagrant it flies. If you are sensitive this podcast is not for you. But if you miss the days of comedians actually being funny instead of preaching to a choir then welcome to The Flagrancy.",
     genre_id: 3,
-    pod_img: "flagrant-2-pod",
+    pod_img: "flagrant-2-pod.jpg",
   },
   {
     title: "Twin Flames",
@@ -79,7 +79,7 @@ const podcastData = [
     description:
       "We all want love, that happily-ever-after feeling of finding your soulmate. What if someone not only claimed they could help you find that perfect partner, they guaranteed it? Jeff and Shaleia, a young couple famous on YouTube, teach about Twin Flames a deep, romantic connection with your perfect partner in their videos. It’s divine love, you’re designed for no one else, and they’re designed for no one else. But the path to finding your Twin Flame isn’t so simple. Some followers claim they were encouraged to cut ties with friends and family that are holding them back, and to claim their Twin Flame by any means necessary. From Wondery, Twin Flames is a podcast about what happens when the quest for love turns into a dangerous obsession.",
     genre_id: 2,
-    pod_img: "twin-flames-pod"
+    pod_img: "Twin-flames-pod.png",
   },
   {
     title: "Escaping NXIVM",
@@ -87,7 +87,7 @@ const podcastData = [
     description:
       'NXIVM (pronounced "Nexium") calls itself a humanitarian community. Experts call it a cult. Uncover: Escaping NXIVM is an investigative podcast series about the group, its leader Keith Raniere and one womans journey to get out. From CBC Podcasts and CBC News.',
     genre_id: 2,
-    pod_img: "escaping-nxivm-pod"
+    pod_img: "escaping-nxivm-pod.webm",
   },
   {
     title: "This is Actually Happening",
@@ -95,7 +95,7 @@ const podcastData = [
     description:
       "What if your mother left to follow a cult… or you woke up in a morgue… or if your boat got caught in a storm and began to sink -- what would you do?   This is Actually Happening brings you extraordinary true stories of life-changing events told by the people who lived them. From a man who finds out a celebrity crush isn’t who she seems to a woman stranded in a Mexican desert fighting to survive, these stories will have you on the edge of your seat waiting to hear what happens next.",
     genre_id: 2,
-    pod_img: "this-is-actually-happening-pod",
+    pod_img: "this-is-actually-happening-pod.webp",
   },
   {
     title: "The Brilliant Idiots",
@@ -103,7 +103,7 @@ const podcastData = [
     description:
       "Charlamagne Tha God and Andrew Schulz are The Brilliant Idiots. Join them each week as they explore the issues of the day in a style thats often idiotic, sometimes brilliant and always hysterical.",
     genre_id: 3,
-    pod_img: "the-brilliant-idiots",
+    pod_img: "the-brilliant-idiots-pod.jpg",
   },
   {
     title: "Rooster Teeth Podcast",
@@ -111,119 +111,134 @@ const podcastData = [
     description:
       "On a weekly basis the Rooster Teeth crew discuss gaming, films, popular culture, the internet, and projects that theyre currently working on.",
     genre_id: 6,
-    pod_img: "RT-pod",
+    pod_img: "RT-pod.webp",
   },
   {
     title: "Therapy Gecko",
     creator: "Lyle Drescher",
-    description: "An unlicensed lizard psychologist travels the universe talking to strangers about absolutely nothing. Call the gecko every Monday/Wednesday/Friday at 9pm EST on twitch.tv/lyleforever",
+    description:
+      "An unlicensed lizard psychologist travels the universe talking to strangers about absolutely nothing. Call the gecko every Monday/Wednesday/Friday at 9pm EST on twitch.tv/lyleforever",
     genre_id: 6,
-    pod_img: "therapy-gecko-pod",
+    pod_img: "therapy-gecko-pod.jpg",
   },
   {
     title: "How I Built This",
     creator: "Guy Raz",
-    description: "Guy Raz dives into the stories behind some of the world's best known companies. How I Built This weaves a narrative journey about innovators, entrepreneurs and idealists—and the movements they built.",
+    description:
+      "Guy Raz dives into the stories behind some of the world's best known companies. How I Built This weaves a narrative journey about innovators, entrepreneurs and idealists—and the movements they built.",
     genre_id: 4,
-    pod_img: "how-i-built-this-pod",
+    pod_img: "how-i-built-this-pod.jpg",
   },
   {
     title: "Internet Today",
     creator: "Ricky & Eliot",
-    description: "Welcome to Internet Today with Ricky & Eliot an Opinion Based Comedy News and Podcast Channel for all things Entertainment, Tech, Culture, Gaming, and stuff that's just plain weird. All served up with a healthy dose of sarcasm.",
+    description:
+      "Welcome to Internet Today with Ricky & Eliot an Opinion Based Comedy News and Podcast Channel for all things Entertainment, Tech, Culture, Gaming, and stuff that's just plain weird. All served up with a healthy dose of sarcasm.",
     genre_id: 1,
-    pod_img: "internet-today-pod",
+    pod_img: "internet-today-pod.jpg",
   },
   {
     title: "NPR News Now",
     creator: "NPR",
     description: "The latest news in five minutes. updated hourly",
     genre_id: 1,
-    pod_img: "npr-news-now-pod",
+    pod_img: "npr-news-now-pod.jpg",
   },
   {
     title: "Tech News Briefing By WSJ",
     creator: "Zoe Thomas",
-    description: "Tech News Briefing is your guide to what people in tech are talking about. Every weekday, we’ll bring you breaking tech news and scoops from the pros at the Wall Street Journal, insight into new innovations and policy debates, tips from our personal tech team, and exclusive interviews with movers and shakers in the industry.",
+    description:
+      "Tech News Briefing is your guide to what people in tech are talking about. Every weekday, we’ll bring you breaking tech news and scoops from the pros at the Wall Street Journal, insight into new innovations and policy debates, tips from our personal tech team, and exclusive interviews with movers and shakers in the industry.",
     genre_id: 1,
-    pod_img: "tech-news-briefing-pod",
+    pod_img: "tech-news-briefing-pod.png",
   },
   {
     title: "H3 podcast",
     creator: "Ethen Klein, Hila Klein",
-    description: "h3h3Productions is a YouTube channel hosted by Ethan Klein and Hila Klein, an Israeli-American husband and wife duo. The majority of their content consists of reaction videos and sketch comedy in which they satirize internet culture. The H3 Podcast is their podcast channel that has been running since 2017.",
+    description:
+      "h3h3Productions is a YouTube channel hosted by Ethan Klein and Hila Klein, an Israeli-American husband and wife duo. The majority of their content consists of reaction videos and sketch comedy in which they satirize internet culture. The H3 Podcast is their podcast channel that has been running since 2017.",
     genre_id: 6,
-    pod_img: "h3-pod",
+    pod_img: "h3-pod.jpg",
   },
   {
     title: "Youre Wrong About",
     creator: "Sarah Marshall, Michael Hobbes",
-    description: "Sarah is a journalist obsessed with the past. Every week she reconsiders a person or event that's been miscast in the public imagination.",
+    description:
+      "Sarah is a journalist obsessed with the past. Every week she reconsiders a person or event that's been miscast in the public imagination.",
     genre_id: 5,
-    pod_img: "youre-wrong-about-pod",
+    pod_img: "youre-wrong-about-pod.jpg",
   },
   {
     title: "Song Exploder",
     creator: "Hrishikesh Hirway",
-    description: "Song Exploder is a podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made.",
+    description:
+      "Song Exploder is a podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made.",
     genre_id: 5,
-    pod_img: "song-exploder-pod",
+    pod_img: "song-exploder-pod.png",
   },
   {
     title: "Overheard at National Geographic",
     creator: "Peter Gwin, Amy Briggs",
-    description: "Come dive into one of the curiously delightful conversations overheard at National Geographic’s headquarters, as we follow explorers, photographers, and scientists to the edges of our big, weird, beautiful world",
+    description:
+      "Come dive into one of the curiously delightful conversations overheard at National Geographic’s headquarters, as we follow explorers, photographers, and scientists to the edges of our big, weird, beautiful world",
     genre_id: 5,
-    pod_img: "overherd-ng-pod",
+    pod_img: "overheard-ng-pod.jpg",
   },
   {
     title: "99% Invisible",
     creator: "Roman Mars",
-    description: "Design is everywhere in our lives, perhaps most importantly in the places where we've just stopped noticing. 99% Invisible is a weekly exploration of the process and power of design and architecture.",
+    description:
+      "Design is everywhere in our lives, perhaps most importantly in the places where we've just stopped noticing. 99% Invisible is a weekly exploration of the process and power of design and architecture.",
     genre_id: 5,
-    pod_img: "99-invisible",
+    pod_img: "99-invisible.png",
   },
   {
     title: "WAN Show",
     creator: "Linus and Luke",
-    description: "Every week Linus and Luke discuss the most current happenings in the technology universe",
+    description:
+      "Every week Linus and Luke discuss the most current happenings in the technology universe",
     genre_id: 4,
-    pod_img: "wan-show-pod",
+    pod_img: "wan-show-pod.jpg",
   },
   {
     title: "Waveform",
     creator: "Marques 'MKBHD' Brownlee",
-    description: "A tech podcast for the gadget lovers and tech heads among us from the mind of Marques Brownlee, better known as MKBHD. MKBHD has made a name for himself on YouTube reviewing everything from the newest smartphones to cameras to electric cars. Pulling from over 10 years of experience covering the tech industry, MKBHD and co-host Andrew Manganelli will keep you informed and entertained as they take a deep dive into the latest and greatest in tech and what deserves your hard earned cash. New episodes every week. Waveform is part of the Vox Media Podcast Network.",
+    description:
+      "A tech podcast for the gadget lovers and tech heads among us from the mind of Marques Brownlee, better known as MKBHD. MKBHD has made a name for himself on YouTube reviewing everything from the newest smartphones to cameras to electric cars. Pulling from over 10 years of experience covering the tech industry, MKBHD and co-host Andrew Manganelli will keep you informed and entertained as they take a deep dive into the latest and greatest in tech and what deserves your hard earned cash. New episodes every week. Waveform is part of the Vox Media Podcast Network.",
     genre_id: 4,
-    pod_img: "waveform-pod",
+    pod_img: "waveform-pod.jpg",
   },
   {
     title: "Darknet Diaries",
     creator: "Jack Rhysider",
-    description: "Explore true stories of the dark side of the Internet with host Jack Rhysider as he takes you on a journey through the chilling world of hacking, data breaches, and cyber crim",
+    description:
+      "Explore true stories of the dark side of the Internet with host Jack Rhysider as he takes you on a journey through the chilling world of hacking, data breaches, and cyber crim",
     genre_id: 2,
-    pod_img: "darknet-diaries-pod",
+    pod_img: "darknet-diaries-pod.jpg",
   },
   {
     title: "Accidental Tech Podcast",
     creator: "Marco Arment, Casey Liss, John Siracusa",
-    description: "Three nerds discussing tech, Apple, programming, and loosely related matters.",
+    description:
+      "Three nerds discussing tech, Apple, programming, and loosely related matters.",
     genre_id: 4,
-    pod_img: "a-t-p-pod",
+    pod_img: "a-t-p-pod.png",
   },
   {
     title: "Son of a Hitman",
     creator: "Patrick Hinds, Gillian Pensavalle",
-    description: "SON OF A HITMAN is a new podcast documentary series produced and hosted by Jason Cavanagh, that dives into the deadly world of Charles Harrelson, a womanizer, a card shark, and possibly one of the most notorious hitmen of all time. He is also the father to A-list actor, Woody Harrelson. Jason Cavanagh investigates each of the three murders Charles Harrelson was charged with, including the first assassination of a federal judge in United States history, all while seeking to unravel the Harrelson’s claim… that he was involved in the assassination of President John F. Kennedy.",
+    description:
+      "SON OF A HITMAN is a new podcast documentary series produced and hosted by Jason Cavanagh, that dives into the deadly world of Charles Harrelson, a womanizer, a card shark, and possibly one of the most notorious hitmen of all time. He is also the father to A-list actor, Woody Harrelson. Jason Cavanagh investigates each of the three murders Charles Harrelson was charged with, including the first assassination of a federal judge in United States history, all while seeking to unravel the Harrelson’s claim… that he was involved in the assassination of President John F. Kennedy.",
     genre_id: 2,
-    pod_img: "son-of-hitman-pod",
+    pod_img: "son-of-hitman-pod.jpg",
   },
   {
     title: "Monring Wire",
     creator: "John Bickley, Georgia Howe",
-    description: "Trust in the media is at an all-time low. And there’s a reason—endless virtue signaling and manufactured outrage. Finally, there’s an alternative. Morning Wire is presented by Daily Wire Editor-in-Chief, John Bickley, and co-host Georgia Howe. Get daily coverage of the latest developments in politics, culture, education, sports, and more. Wake up with Morning Wire and get the facts first on the news you need to know.",
+    description:
+      "Trust in the media is at an all-time low. And there’s a reason—endless virtue signaling and manufactured outrage. Finally, there’s an alternative. Morning Wire is presented by Daily Wire Editor-in-Chief, John Bickley, and co-host Georgia Howe. Get daily coverage of the latest developments in politics, culture, education, sports, and more. Wake up with Morning Wire and get the facts first on the news you need to know.",
     genre_id: 1,
-    pod_img: "morning-wire-pod",
+    pod_img: "morning-wire-pod.png",
   },
 ];
 
