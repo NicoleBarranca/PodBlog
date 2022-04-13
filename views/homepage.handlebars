@@ -5,6 +5,7 @@
       PodFreaks!</h1>
     <p class="lead text-light text-center">Come join our community podcast
       lovers...</p>
+      {{#unless loggedIn}}
     <p class="lead text-center">
       <a
         class="btn btn-light btn-lg mt-4 mb-5"
@@ -12,6 +13,7 @@
         role="button"
       >Login</a>
     </p>
+    {{/unless}}
   </div>
 </div>
 
