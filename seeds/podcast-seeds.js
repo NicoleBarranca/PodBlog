@@ -16,10 +16,9 @@ const podcastData = [
     genre_id: 4,
   },
   {
-    title: "Hardcore History",
-    creator: "Dan Carlin",
-    description:
-      "Carlin’s work weaves historical information with deep questions and Twilight Zone-style twists to help illustrate the power and continuing relevance of the past. Drama, extremes, empathy and vivid examples of both the highs and lows of humanity dominate the narrative. It’s a trademark mix of elements that has been entertaining listeners since 2005.",
+    title: 'Hardcore History',
+    creator: 'Dan Carlin',
+    description: 'Carlins work weaves historical information with deep questions and Twilight Zone-style twists to help illustrate the power and continuing relevance of the past. Drama, extremes, empathy and vivid examples of both the highs and lows of humanity dominate the narrative. It’s a trademark mix of elements that has been entertaining listeners since 2005.',
     genre_id: 5,
   },
   {

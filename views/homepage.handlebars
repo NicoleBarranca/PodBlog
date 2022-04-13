@@ -5,13 +5,9 @@
       PodFreaks!</h1>
     <p class="lead text-light text-center">Come join our community podcast
       lovers...</p>
-      {{#unless loggedIn}}
+    {{#unless loggedIn}}
     <p class="lead text-center">
-      <a
-        class="btn btn-light btn-lg mt-4 mb-5"
-        href="/login"
-        role="button"
-      >Login</a>
+      <a class="btn btn-light btn-lg mt-4 mb-5" href="/login" role="button">Login</a>
     </p>
     {{/unless}}
   </div>
@@ -23,13 +19,14 @@
     <h1 class="display-6 text-center">Featured Podcasts</h1>
     <p class="lead text-center mb-2">Checkout our featured podcasts!</p>
   </div>
-  <div
-    class="d-flex justify-content-center justify-content-sm-center flex-sm-wrap"
-  >
+  <div class="d-flex justify-content-center justify-content-sm-center flex-sm-wrap">
     <div class="row">
       <div class="col mt-4 d-flex align-self-stretch">
        
         <div class="card" style="width: 18rem;">
+<<<<<<< HEAD
+          <img src="/images/Twin-flames-pod.png" class="card-img-top" alt="..." />
+=======
            <a href="/podcasts">
           <img
             src="/images/Twin-flames-pod.png"
@@ -37,6 +34,7 @@
             alt="..."
           />
           </a>
+>>>>>>> develop
           <div class="card-body">
             <h5 class="card-title">Twin Flames</h5>
             <p class="card-text"><small class="text-muted">Stephanie Beatriz</small></p>
@@ -53,6 +51,9 @@
 
       <div class="col mt-4 d-flex align-self-stretch">
         <div class="card" style="width: 18rem;">
+<<<<<<< HEAD
+          <img src="/images/lex-fridman-pod.png" class="card-img-top" alt="..." />
+=======
           <a href="/podcasts">
           <img
             src="/images/lex-fridman-pod.png"
@@ -60,6 +61,7 @@
             alt="..."
           />
           </a>
+>>>>>>> develop
           <div class="card-body">
             <h5 class="card-title">Lex Fridman Podcast</h5>
             <p class="card-text"><small class="text-muted">Lex Fridman</small></p>
@@ -98,28 +100,19 @@
 <div class="container bg-secondary p-2 mb-5 mt-5 text-dark bg-opacity-10"></div>
 
 <!-- GENRES CARD-->
-{{!-- h-75 w-100  h-50 w-100  w-75 --}}
-<div
-  class="d-flex justify-content-center genre-card justify-content-sm-center "
->
+{{!-- h-75 w-100 h-50 w-100 w-75 --}}
+
+<div class="d-flex justify-content-center genre-card justify-content-sm-center" style="max-height: 200;">
   <div class="card  genre-card justify-content-sm-center" id="genre-image">
     <div class="card-body ">
       <div class="">
-      <h5 class="card-title fs-2 text-light text-center">See all Genres</h5>
-    <p class="lead text-center">
-      <a
-        class="btn btn-outline-light btn-lg mt-4 mb-5"
-        href="/genres"
-        role="button"
-      >Explore</a>
-    </p>
+        <h5 class="card-title fs-2 text-light text-center mt-5">See all Genres</h5>
+        <p class="lead text-center">
+          <a class="btn btn-outline-light btn-lg mt-5 mb-5" href="/genres" role="button">Explore</a>
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div>
-    <img src="" alt="">
-  </div>
 
-<div
-  class="container bg-secondary p-2 mb-5 mt-5 break text-dark bg-opacity-10"
-></div>
+
+    {{!-- <div class="container bg-secondary p-2 mb-5 mt-5 break text-dark bg-opacity-10"></div> --}}
