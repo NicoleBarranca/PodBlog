@@ -1,0 +1,19 @@
+<div class="display-4 text-center fw-bold text-dark mt-5 pt-5 font-monspace"></div>
+
+{{#each genres}}
+<div class="card mb-5 text-center" style="max-width: 960px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../images/genre-pic.jpg" class="card-img " alt="Entertainment" />
+    </div>
+    <div class="col-md-8 list-group-item-dark">
+      <div class="card-body">
+        <h5 class="card-title fs-1 font-monospace">{{genre_name}}</h5>
+        {{#each podcasts}}
+        <a href="/podcasts/{{id}}"class="list-group-item list-group-item-action list-group-item-light font-monospace">{{title}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}

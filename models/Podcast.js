@@ -20,12 +20,19 @@ Podcast.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1000),
       allowNull: false,
     },
-    genre: {
-      type: DataTypes.STRING,
+    genre_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: "genre",
+        key: "id",
+      },
+    },
+    pod_img: {
+      type: DataTypes.STRING,
     },
   },
   {
