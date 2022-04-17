@@ -37,7 +37,7 @@ PodFreaks is an easy to use podcast forum where users can sign-up for an account
 * express-session
 * express-handlebars
 * connect-session-sequelize
-* date-and-date
+* date-and-time
 
 ## Website
 
