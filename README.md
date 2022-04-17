@@ -16,7 +16,6 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Installation](#installation)
 * [Built With](#builtwith)
 * [Website](#website)
 * [Presentation](#presentation)
@@ -25,17 +24,6 @@
 ## Description
 
 PodFreaks is an easy to use podcast forum where users can sign-up for an account and review various podcasts. The users have the abliity to explore podcasts by genres, leave comments, and see other users comments. This app allows users to join a social community for podcast lovers. This application has been deployed in Heroku.
-
-## Installation
-
-The inital setup requires the user to clone the repo using the following link [GitHub Repo](https://github.com/NicoleBarranca/PodFreaks). This project also requires an npm install to gain access to the packages mentioned in the below 'Built With' section. Use the commands below in the terminal to initialize the Node.js package and to install the dependancies.
-
-```bash
-npm init
-```
-```bash
-npm install
-```
 
 ## Built With
 
